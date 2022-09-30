@@ -26,7 +26,8 @@ function currentTime() {
 currentTime()
 
 let weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-let monthday = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+// let monthday = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+let monthday = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 let d = new Date()
 let week = d.getDay();
 let day = d.getDate();
@@ -35,7 +36,8 @@ let year = d.getFullYear();
 
 let days = "Day:" + weekdays[d.getDay()]
 document.getElementById('name').innerHTML = days;
-let datetime = "Date:" + day + "/" + monthday[d.getMonth()] + "/" + year
+// let datetime = "Date:" + day + "/" + monthday[d.getMonth()] + "/" + year
+let datetime = "Date:" + day + " " + monthday[d.getMonth()] + "," + " " + year
 document.getElementById('name2').innerHTML = datetime;
 // switch (dayofweek) {
     //     case 0:
