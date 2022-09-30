@@ -10,11 +10,12 @@ body{
     min-height: 60vh;
     align-content: center;
     justify-content: center;
+    scroll-behavior: none;
     
 }
 .container{
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     border-radius: 50%;
     background-color: black;
     border: 7px solid red;
@@ -27,7 +28,7 @@ body{
 
 #name1{
 
-    border: 2px solid black;
+
     display: flex;
     justify-content: center;
     align-content: center;
@@ -41,7 +42,7 @@ body{
     
 }
 #name{
-    border: 2px solid black;
+   
     display: flex;
     justify-content: center;
     align-content: center;
@@ -54,7 +55,7 @@ body{
    
 }
 #name2{
-    border: 2px solid black;
+
     display: flex;
     justify-content: center;
     align-content: center;
@@ -67,4 +68,11 @@ body{
 }
 h1{
     color: red;
+}
+
+@media screen and (max-width:700px){
+   .container{
+    width: 400px;
+    height: 400px;
+   } 
 }
